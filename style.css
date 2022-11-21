@@ -78,6 +78,13 @@ body {
    text-align: center;
 }
 
+.left {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+
 h1 {
    font-size: 30px;
    margin-top: 80px; 
@@ -111,7 +118,7 @@ h1, .description {
 }
 
 .form {
-   margin: 0 50px;
+   margin: 0 50px 50px 50px;
    background-color: white;
    padding: 25px;
    border-radius: 10px;
@@ -129,6 +136,15 @@ h1, .description {
 }
 
 input[type="text"] {
+   padding: 15px;
+   border: 1px solid var(--accent-200);
+   border-radius: 5px;
+
+   color: var(--accent-900);
+   font-weight: 600;
+}
+
+input[type="password"] {
    padding: 15px;
    border: 1px solid var(--accent-200);
    border-radius: 5px;
@@ -165,10 +181,6 @@ input:focus {
    padding-left: 10px;
 }
 
-.error-text-display {
-   display: none;
-}
-
 button {
    display: block;
    margin: 15px auto;
@@ -179,6 +191,7 @@ button {
    color: white;
    text-transform: uppercase;
    border: transparent;
+   border-radius: 5px;
    cursor: pointer;
    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -197,4 +210,56 @@ button:hover {
    text-decoration: none;
    color: var(--danger);
    display: block;
+}
+
+@media screen and (min-width: 1000px) {
+   body {
+      background-image: url(images/bg-intro-desktop.png)
+   }
+   .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-direction: row;
+   }
+   .left {
+      text-align: left;
+      align-items: flex-start;
+      width: 50%;
+   }
+   h1 {
+      font-size: 40px;
+      margin: 0 0 30px 40px;
+      max-width: 400px;
+      line-height: 1.1;
+   }
+   .description {
+      margin: 0 40px 0 40px;
+   }
+   .right {
+      width: 50%;
+   }
+   .CTA {
+      padding: 10px;
+   }
+   .bold {
+      display: inline;
+   }
+   input[type="text"] {
+      width: 100%;
+   }
+   input[type="password"] {
+      width: 100%;
+   }
+   .error-icon {
+      top: 18px;
+   }
+   button {
+      margin-bottom: 0;
+   }
+   .footnote {
+      font-size: 12px;
+   }
+   .footnote a {
+      display: inline;
+   }
 }
