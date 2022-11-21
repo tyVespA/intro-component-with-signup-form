@@ -217,6 +217,7 @@ button:hover {
       background-image: url(images/bg-intro-desktop.png)
    }
    .container {
+      height: 100vh;
       max-width: 1200px;
       margin: 0 auto;
       flex-direction: row;
