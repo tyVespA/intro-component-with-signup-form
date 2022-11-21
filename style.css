@@ -186,7 +186,7 @@ button {
    margin: 15px auto;
    width: 100%;
    font-size: 16px;
-   padding: 20px;
+   padding: 15px;
    background-color: var(--confirm);
    color: white;
    text-transform: uppercase;
@@ -240,10 +240,13 @@ button:hover {
       width: 50%;
    }
    .CTA {
-      padding: 10px;
+      padding: 15px;
    }
    .bold {
       display: inline;
+   }
+   .form {
+      padding: 40px;
    }
    input[type="text"] {
       width: 100%;
