@@ -37,7 +37,7 @@ form.addEventListener("submit", (e) => {
    } else if (lastName.value.length != 0) {
       lastName.style.cssText = ("border: 1px solid hsl(246, 25%, 77%)")
       lastNameErrorIcon.classList.add("error-icon-display")
-      lastNameErrorText.classList.add(".error-text-display")
+      lastNameErrorText.textContent = ("")
    }
 
    if (!(email.value.match(mailFormat))) {
